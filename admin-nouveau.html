@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Nouveau projet · Administration KWAA</title>
+    <link rel="icon" href="assets/logo/KWAA_icone.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body data-page="new" hidden>
+    <header class="adm-top">
+        <div class="wrap adm-bar">
+            <a class="brand" href="index.html"><svg class="logo-icon" viewBox="0 0 3140 3376" aria-hidden="true">
+                    <use href="assets/logo/sprite.svg#kwaa-icon" />
+                </svg><span>KWA WOTE<small>ADMINISTRATION</small></span></a>
+            <div class="adm-user"><span id="who"></span></div>
+        </div>
+    </header>
+    <main class="wrap adm adm-narrow">
+        <p><a href="admin-projets.html">← Retour aux projets</a></p>
+        <h1>Nouveau projet</h1>
+        <form id="new" class="form">
+            <label>Titre<input name="title" required maxlength="120"></label>
+            <label>Catégorie<select name="category">
+                    <option value="res">Résidentiel</option>
+                    <option value="urb">Urbanisme</option>
+                    <option value="des">Design intérieur</option>
+                    <option value="ins">Institutions</option>
+                </select></label>
+            <label>Statut<select name="work_status">
+                    <option value="realise">Réalisé</option>
+                    <option value="chantier">En chantier</option>
+                    <option value="etude">Projet d'étude / concours</option>
+                    <option value="visuel">Visualisation</option>
+                </select></label>
+            <label>Lieu<input name="location"></label>
+            <label>Défi<textarea name="challenge" rows="3"></textarea></label>
+            <label>Solution<textarea name="solution" rows="3"></textarea></label>
+            <label>Surface<input name="surface" placeholder="ex. 180 m²"></label>
+            <label>Délai<input name="delay" placeholder="ex. 8 mois"></label>
+            <label>Photo ou rendu (réduit automatiquement)<input type="file" name="img" accept="image/*"></label>
+            <p id="msg" role="status"></p>
+            <button class="btn solid" id="send">Enregistrer</button>
+        </form>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+
+</html>
