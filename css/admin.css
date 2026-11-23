@@ -1,9 +1,204 @@
-.adm{padding-block:40px;max-width:760px}
-.adm label{display:block;margin-bottom:14px;font-weight:700}
-.adm input,.adm select,.adm textarea{display:block;width:100%;padding:12px;font:inherit;border:1px solid var(--charbon);background:#fff;margin-top:4px}
-.adm-list{list-style:none;padding:0}
-.adm-list li{border-top:1px solid var(--charbon);padding:14px 0;display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;justify-content:space-between}
-.adm-list .btn{padding:10px 14px;font-size:14px;min-height:44px}
-.badge{font-size:13px;font-weight:700;padding:2px 8px;background:var(--ocre);color:var(--sable)}
-.badge.published{background:var(--vert)}
-.project .frame img.photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.adm {
+    padding-block: 36px;
+    max-width: 720px
+}
+
+.adm h1 {
+    font-size: clamp(26px, 5vw, 34px)
+}
+
+.adm h2 {
+    font-size: 22px;
+    margin: 28px 0 14px
+}
+
+.adm .form {
+    border-radius: 14px;
+    box-shadow: 0 8px 24px -12px rgba(63, 0, 16, .2);
+    background: #fff
+}
+
+.adm label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 14.5px;
+    color: var(--bordeaux)
+}
+
+.adm input,
+.adm select,
+.adm textarea {
+    display: block;
+    width: 100%;
+    padding: 11px 12px;
+    font: inherit;
+    border: 1px solid rgba(63, 0, 16, .3);
+    border-radius: 8px;
+    background: #fff;
+    margin-top: 5px
+}
+
+.adm-list {
+    list-style: none;
+    padding: 0
+}
+
+.adm-list li {
+    background: #fff;
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 2px rgba(63, 0, 16, .06)
+}
+
+.adm-list .btn {
+    padding: 9px 14px;
+    font-size: 14px;
+    min-height: 44px
+}
+
+.badge {
+    font-size: 12.5px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 99px;
+    background: var(--ocre);
+    color: var(--sable)
+}
+
+.badge.published {
+    background: var(--vert)
+}
+
+.badge.rejected {
+    background: #7a2a2a
+}
+
+#msg {
+    min-height: 1.4em;
+    font-weight: 600;
+    color: var(--bordeaux)
+}
+
+#msg.err {
+    color: #8a1c1c
+}
+
+.project .frame img.photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1
+}
+
+.adm-top {
+    background: var(--sable);
+    border-bottom: 1px solid var(--trait)
+}
+
+.adm-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    min-height: 64px
+}
+
+.adm-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    flex-wrap: wrap;
+    justify-content: flex-end
+}
+
+.adm-user .btn {
+    padding: 8px 14px;
+    font-size: 14px;
+    min-height: 44px
+}
+
+.adm-narrow {
+    max-width: 560px
+}
+
+.adm-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 8px
+}
+
+.adm-title h1 {
+    margin: 0
+}
+
+.adm-add {
+    white-space: nowrap
+}
+
+.adm-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0
+}
+
+.adm-thumb {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex: none
+}
+
+.adm-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap
+}
+
+.adm-fab {
+    position: fixed;
+    right: 18px;
+    bottom: 22px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--bordeaux);
+    color: var(--sable);
+    font-size: 32px;
+    line-height: 56px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 8px 20px -6px rgba(63, 0, 16, .5);
+    z-index: 5
+}
+
+.adm-fab:hover {
+    background: var(--ocre);
+    color: var(--sable)
+}
+
+@media (min-width:761px) {
+    .adm-fab {
+        display: none
+    }
+}
+
+@media (max-width:760px) {
+    .adm-add {
+        display: none
+    }
+}
