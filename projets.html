@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Projets · KWA WOTE Architecture &amp; Associés</title>
+    <meta name="description" content="Portfolio filtrable : résidentiel, urbanisme, design intérieur et institutions.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" href="assets/logo/KWAA_icone.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="draft-bar">Version de travail · site non publié</div>
+
+    <header class="top">
+        <div class="wrap">
+            <a class="brand" href="index.html" aria-label="KWA WOTE Architecture et Associés, accueil">
+                <svg class="logo-icon" viewBox="0 0 3140 3376" aria-hidden="true">
+                    <use href="assets/logo/sprite.svg#kwaa-icon" />
+                </svg>
+                <span>KWA WOTE<small>ARCHITECTURE &amp; ASSOCIÉS</small></span>
+            </a>
+            <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+            <nav id="menu" aria-label="Navigation principale">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="agence.html">L'agence</a></li>
+                    <li><a href="projets.html" aria-current="page">Projets</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="nav-cta">Démarrer un projet</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenu">
+        <div class="pagehead">
+            <div class="wrap">
+                <h1>Projets</h1>
+                <p>Réalisations, chantiers en cours, études et visualisations.</p>
+            </div>
+        </div>
+
+        <section id="projets">
+            <div class="wrap">
+                <div class="filters" role="group" aria-label="Filtrer les projets">
+                    <button aria-pressed="true" data-f="all">Tous</button>
+                    <button aria-pressed="false" data-f="res">Résidentiel</button>
+                    <button aria-pressed="false" data-f="urb">Urbanisme</button>
+                    <button aria-pressed="false" data-f="des">Design intérieur</button>
+                    <button aria-pressed="false" data-f="ins">Institutions</button>
+                </div>
+
+                <ul class="projects" id="grille">
+                    <li class="project" data-cat="res">
+                        <div class="frame" role="img" aria-label="Photo à venir"><svg viewBox="0 0 3140 3376"
+                                aria-hidden="true">
+                                <use href="assets/logo/sprite.svg#kwaa-icon" />
+                            </svg></div>
+                        <p class="meta">Résidentiel · plan et rendus 3D</p>
+                        <h3>Villa unifamiliale de plain-pied</h3>
+                        <dl>
+                            <dt>Défi</dt>
+                            <dd>Organiser les pièces autour des usages familiaux.</dd>
+                            <dt>Solution</dt>
+                            <dd>Plan de plain-pied, onze rendus et une vidéo.</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <div class="cols">
+                <div>
+                    <h4>KWA WOTE Architecture &amp; Associés</h4>
+                    <p>Bâtir pour tous.</p>
+                </div>
+                <div>
+                    <h4>Cabinet</h4>
+                    <ul>
+                        <li><a href="agence.html">L'agence</a></li>
+                        <li><a href="projets.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="contact.html">Demander un devis</a></li>
+                        <li><a href="tel:+243992116623">+243 992 116 623</a></li>
+                        <li><a href="mailto:contact@kwaa.cd">contact@kwaa.cd</a></li>
+                        <li><a href="mentions.html">Mentions légales</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="base"><span>© 2026 KWA WOTE Architecture &amp; Associés (KWAA)</span><span>Goma · Butembo ·
+                    Beni</span></div>
+        </div>
+    </footer>
+
+    <div class="mobile-cta" aria-label="Contact rapide">
+        <a href="tel:+243992116623">Appeler</a>
+        <a href="https://wa.me/243992116623">WhatsApp</a>
+        <a href="contact.html">Devis</a>
+    </div>
+
+    <script src="js/config.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/projects.js" defer></script>
+</body>
+
+</html>
